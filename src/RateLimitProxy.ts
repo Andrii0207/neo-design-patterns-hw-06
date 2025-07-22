@@ -8,7 +8,17 @@ export function createRateLimitProxy(
 
   return new Proxy(service, {
     get(target, prop) {
-      // TODO: Implement the proxy
+      if(prop === "send") {
+        return (message: string) => {
+          const now = Date.now();
+          if (now - lastCallTime >= intervalMs){
+            lastCallTime = now;
+            target.send(message)
+          }
+          console.log("[RateLimit] skipped")
+        } 
+      }
+      return target[prop as keyof typeof target]
     },
   });
 }
