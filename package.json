@@ -1,0 +1,27 @@
+{
+    "name": "neo-design-patterns-hw-05",
+    "version": "1.0.0",
+    "description": "Design Patterns Homework - Message Service Implementation",
+    "main": "dist/main.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "ts-node src/main.ts"
+    },
+    "devDependencies": {
+        "@types/node": "^18.19.120",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Andrii0207/neo-design-patterns-hw-06.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/Andrii0207/neo-design-patterns-hw-06/issues"
+    },
+    "homepage": "https://github.com/Andrii0207/neo-design-patterns-hw-06#readme"
+}
